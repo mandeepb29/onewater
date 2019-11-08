@@ -1,0 +1,149 @@
+section {
+  padding: 60px 0;
+}
+.cover-photo {
+  background-attachment: fixed;
+  background: linear-gradient(
+      180deg,
+      rgba(0, 30, 199, 0.88) 20%,
+      rgba(13, 0, 212, 0.94) 100%
+    ),
+    url(/assets/img/landing/about-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin: 40px 0;
+}
+h2 {
+  font-size: 2.6rem;
+  text-align: left;
+  font-weight: 700;
+  letter-spacing: -2px;
+  padding-left: 0;
+}
+p {
+  font-size: 1.05rem;
+}
+.page-title {
+  padding: 0px 0;
+  margin: 0 0;
+  color: #092b86;
+  h1 {
+    font-size: 3rem;
+    text-align: center;
+    letter-spacing: -2.5px;
+    font-weight: 700;
+  }
+}
+
+.section-intro {
+  padding-top: 10px;
+  background: url(/assets/img/landing/about-bg3.png);
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 1) 19%,
+      rgba(255, 255, 255, 0.678) 56%,
+      rgba(255, 255, 255, 1) 100%
+    ),
+    url(/assets/img/landing/about-intro-img.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  background-position: bottom center;
+  h1 {
+    color: #000;
+    text-align: center;
+  }
+  h3 {
+    text-align: center;
+    margin: 65px;
+    color: #000000;
+    line-height: 2rem;
+    max-width: 700px;
+    font-size: 1.3rem;
+    margin: auto;
+    font-weight: 500;
+  }
+}
+.section-bg {
+  padding: 50px 0 100px;
+}
+
+.section-1 {
+  padding: 0px 0;
+  position: relative;
+  margin-top: -10vh;
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 0.5147233893557423) 75%,
+      rgba(255, 255, 255, 1) 100%
+    ),
+    url(https://images.ctfassets.net/rme6k5gcjl11/5XtPXFlhAWckWMoomMOIy0/5b86679e8a20a2c1f452218baba47ff8/CSDW-Donate-footer-african-girl-holds-clean-water-cup.jpg?fm=jpg&q=80&w=1000);
+
+  background-repeat: no-repeat;
+  background-size: 85%;
+  min-height: 100vh;
+  background-position: bottom right;
+}
+
+.shift-left {
+  margin-left: -100px;
+}
+.half-width-text {
+  width: 60%;
+}
+.blue-section-intro {
+  padding: 70px 0;
+  text-align: center;
+}
+.blue-intro-img {
+  max-width: 700px;
+  margin: 3rem auto 0;
+}
+.section-2 {
+  position: relative;
+  z-index: 1;
+}
+.section-blue {
+  background: #092b86;
+  color: #fff;
+  position: relative;
+
+  h1 {
+    font-weight: 600;
+    font-size: 2.8rem;
+  }
+  h2 {
+    font-weight: 600;
+  }
+}
+
+.section-3 {
+  padding-top: 75px;
+  padding-bottom: 300px;
+  margin-bottom: -300px;
+}
+.img {
+  margin: auto;
+  max-width: 80%;
+  position: relative;
+  img {
+    z-index: 3;
+    position: relative;
+  }
+}
+// .img::before{
+//     position: absolute;
+//     content: "";
+//     width: 100%;
+//     height: 100%;
+//     top: 20px;
+//     left:20px;
+//     z-index: 0;
+//     background: transparent;
+//     border: 2px #c9e9ed solid;
+// }

@@ -1,0 +1,219 @@
+@import '../../dashboard-style.scss';
+
+@import '../../job-portal.component.scss';
+
+
+h4{
+    padding: 20px 0 !important;
+      font-size: 1.5rem !important;
+      font-weight: 700 !important;
+      letter-spacing: -0.3px !important;
+  }
+  .slide-in{
+    transform: translateX(0);
+  }
+.edit-resume i {
+  font-size: 1.3rem;
+    color: #444;
+    font-weight: 600;
+}
+  .owl-carousel .owl-nav {
+    top: 33% !important;
+  }
+
+   .modal-dialog {
+    max-width: 900px; }
+
+   .modal .modal-body {
+    padding: 50px 30px; }
+     .modal .modal-body .title {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      margin-bottom: 30px; }
+       .modal .modal-body .title h4 {
+        font-size: 1.5rem;
+        text-transform: capitalize;
+
+        font-weight: 600; }
+         .modal .modal-body .title h4 svg {
+           height: 30px;
+       width: 30px;
+       margin-right: 10px;
+       color: #000;
+      }
+       .modal .modal-body .title .add-more {
+         font-size: 1rem;
+       font-weight: 700;
+       padding: 8px 16px;
+       margin-right: 0;
+       border: 0;
+       border-radius: 3px;
+       background: rgba(36, 109, 248, 0.15);
+       color: #246df8;
+      }
+         .modal .modal-body .title .add-more:hover {
+          color: #ffffff;
+          background: #246df8; }
+     .modal .modal-body form h4 {
+      font-size: 1.8rem;
+      text-transform: capitalize;
+      letter-spacing: -0.5px;
+
+      font-weight: 600;
+      padding-top: 30px;
+      padding-bottom: 20px; }
+       .modal .modal-body form h4 svg {
+         height: 30px;
+       width: 30px;
+       margin-right: 10px;
+       color: #000; }
+     .modal .modal-body form .input-block-wrap + .input-block-wrap {
+      margin-top: 60px; }
+     .modal .modal-body form .form-group {
+      margin-bottom: 20px;}
+     .modal .modal-body form .input-group-text {
+      background: transparent;
+      margin-right: 1px;
+      border: 0;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #777;
+      padding-left: 0;
+      border-radius: 0;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+      position: relative; }
+   @media all and (max-width:420px){
+      .modal .modal-body form .input-group {
+        flex-direction: column;
+      }
+         .modal .modal-body form .input-group-text {
+           border-bottom: none;
+         }
+         .modal .modal-body form .form-group .form-control{
+         width:100%;
+   }
+ }
+       .modal .modal-body form .input-group-text:before {
+        position: absolute;
+        content: '';
+        top: 10px;
+        bottom: 10px;
+        right: 0;
+        width: 1px;
+        background: rgba(0, 0, 0, 0.08); }
+     .modal .modal-body form .form-control {
+      height: 40px;
+      border: 0;
+      outline: none;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      border-radius: 0;
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: #777;
+      -webkit-transition: all .3s ease;
+      -o-transition: all .3s ease;
+      transition: all .3s ease;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+     }
+     .modal .modal-body .form-group label{
+       font-size: 1.1rem;
+         font-weight: 700;
+         color: #444;
+     }
+       .modal .modal-body form .form-control:focus {
+        border-bottom-color: #246df8; }
+         .modal .modal-body form .form-control:focus + .input-group-text {
+          border-bottom-color: #246df8; }
+     .modal .modal-body form textarea.form-control {
+      height: 120px; }
+     .modal .modal-body form .dropdown-label {
+      width: 200px;
+      overflow: hidden;
+      position: relative;
+      background: white;
+      width: 70px;
+      padding: 0;
+      border-bottom: 0; }
+     .modal .modal-body form .dropdown-label select {
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      background: transparent;
+      width: 100%;
+      border: 0;
+      border-radius: 0;
+      padding-left: 0.5em;
+      position: relative;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+      z-index: 10; }
+
+  @-moz-document url-prefix() {
+     .modal .modal-body form .dropdown-label select {
+      width: 110%; } }
+     .modal .modal-body form .dropdown-label select:-moz-focusring {
+      color: transparent;
+      text-shadow: 0 0 0 black; }
+     .modal .modal-body form .dropdown-label select::-ms-expand {
+      display: none; }
+     .modal .modal-body form .dropdown-label i {
+      position: absolute;
+      right: 0.5em;
+      top: 13px;
+      z-index: 5;
+      color: black; }
+     .modal .modal-body form .buttons {
+      margin-bottom: -10px; }
+       .modal .modal-body form .buttons button {
+         border: 0;
+       box-shadow: none;
+       outline: none;
+       font-weight: 600;
+       cursor: pointer;
+       border-radius: 3px;
+       margin-right: 10px;
+       margin-bottom: 10px;
+       transition: all .3s ease;
+       background: rgba(36, 109, 248, 0.15);
+       text-align: center;
+       border-radius: 3px;
+       color: #6f7484;
+       padding: 8px 16px;
+       font-size: 1rem;
+       background: #f9f9f9;
+       border-radius: 5px;
+       box-shadow: 5px 5px 14px -1px #eaeaea; }
+         .modal .modal-body form .buttons button:hover,  .modal .modal-body form .buttons button.primary-bg {
+          background: #246df8;
+          color: #ffffff; }
+
+  .details-section .modal h4 {
+    padding-right: 0;
+    padding-bottom: 0; }
+    .details-section .modal h4 svg {
+      position: static; }
+
+  .modal-education .modal-content .modal-body .content .input-group-text,
+  .modal-pro-skill .modal-content .modal-body .content .input-group-text,
+  .modal-portfolio .modal-content .modal-body .content .input-group-text,
+  .modal-experience .modal-content .modal-body .content .input-group-text {
+    width: 100%; }
+
+  .modal-education .modal-content .modal-body .content textarea.form-control,
+  .modal-pro-skill .modal-content .modal-body .content textarea.form-control,
+  .modal-portfolio .modal-content .modal-body .content textarea.form-control,
+  .modal-experience .modal-content .modal-body .content textarea.form-control {
+    height: 120px; }
+
+  .modal-portfolio .modal-content .modal-body .upload-profile-photo .update-photo {
+    height: 100px;
+    width: 100px; }
+
+  .modal-portfolio .modal-content .modal-body .upload-profile-photo .file-upload {
+    width: 100px; }

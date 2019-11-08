@@ -1,0 +1,171 @@
+<section class="emp-registration">
+    <div class="container">
+      <h1>
+        Hey username, welcome to <span> OneWater Blog.</span> <br>
+        Fill up the form below and get started!
+      </h1>
+      <div class="dashboard-content-wrapper dash-tab">
+        <form class="dashboard-form" (submit)="submit()" [formGroup]="form">
+
+          <div class="dashboard-section basic-info-input">
+            <h4><i data-feather="user-check"></i>Basic Info</h4>
+            <div class="form-group row">
+              <label class="col-sm-3 col-form-label"> Name</label>
+              <div class="col-sm-9">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Full Name"
+                  formControlName="author_name"
+                />
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-sm-3 col-form-label">Phone</label>
+              <div class="col-sm-9">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="+55 123 4563 4643"
+                  formControlName="mobile"
+                />
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-sm-3 col-form-label">Address</label>
+              <div class="col-sm-9">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Washington D.C"
+                  formControlName="location"
+                />
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-sm-3 col-form-label">Interests</label>
+              <div class="col-sm-9">
+                <textarea
+                  type="text"
+                  class="form-control"
+                  placeholder="Interests"
+                  formControlName="interest"
+                ></textarea>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-sm-3 col-form-label">Bio</label>
+              <div class="col-sm-9">
+                <textarea formControlName="author_desc" class="form-control" placeholder="Write something about yourself..."></textarea>
+              </div>
+            </div>
+          </div>
+            <div class="dashboard-section media-inputs">
+            <h4><i data-feather="image"></i>Profile Photo</h4>
+            <div class="form-group row">
+              <label class="col-sm-3 col-form-label">Upload photo</label>
+              <div class="col-sm-9">
+                <div class="input-group image-upload-input">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text">
+                        <input style="display: none"  type="file" #file  (change)="onImagePick($event)" >
+                      <button type="button" (click)="file.click()">Select Image</button>
+                    </div>
+                  </div>
+                  <div class="active">
+                    <div class="upload-images">
+                      <div class="pic" *ngIf="imagePreview!='' && imagePreview">
+
+                          <img style="width: 120px;" [src]="imagePreview">
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="dashboard-section social-inputs">
+            <h4><i data-feather="cast"></i>Social Networks</h4>
+            <div class="form-group row">
+              <div class="offset-sm-3 col-sm-9">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text">
+                      <i class="fa fa-linkedin"></i>
+                    </div>
+                  </div>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Linkedin profile url"
+                    formControlName="linkedin"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-sm-3 col-form-label">Social Links</label>
+              <div class="col-sm-9">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text">
+                      <i class="fa fa-facebook-f"></i>
+                    </div>
+                  </div>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Facebook profile url"
+                    formControlName="facebook"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="offset-sm-3 col-sm-9">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text">
+                      <i class="fa fa-twitter"></i>
+                    </div>
+                  </div>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Twitter profile url"
+                    formControlName="twitter"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="offset-sm-3 col-sm-9">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text">
+                      <i class="fa fa-instagran"></i>
+                    </div>
+                  </div>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Instagram profile url"
+                    formControlName="instagram"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="dashboard-section basic-info-input">
+            <div class="form-group row">
+              <label class="col-sm-3 col-form-label"></label>
+              <div class="col-sm-9">
+                <button class="button" type="submit" >Save Change</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>

@@ -1,0 +1,9 @@
+ @import '../../../../job-portal/dashboard-style.scss';
+@import '../../../../job-portal/job-portal.component.scss';
+//@import '../../../../../../node_modules/quill/dist/quill.core.css';
+//@import '../../../../../../node_modules/quill/dist/quill.snow.css';
+.heading{
+    text-align: left;
+    border-bottom: 1px solid #999;
+    margin: 0 0rem 3rem;
+}

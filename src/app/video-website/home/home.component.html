@@ -1,0 +1,138 @@
+<div class="cover-photo">
+    <div class="wave"></div>
+</div>
+<!----------------------------------
+       LANDING SECTION
+ ------------------------------------>
+ <section class="landing-section">
+<div class="container">
+           <div class="landing-text">
+               <h2>
+                   OneVideo
+               </h2>
+               <p>
+                  Find videos that can change your life here.
+               </p>
+           </div>
+
+           <div class="landing-video">
+             <div class="iframe-container">
+             <iframe width="560" height="315" src="https://www.youtube.com/embed/0tIUbGVEKIk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+             </iframe>
+             </div>
+           </div>
+           <!-- <p class="vod">
+            Video of the Day.
+           </p> -->
+
+</div>
+</section>
+<!--LANDING SECTION ENDS-->
+
+<!----------Video Section Begins--------------->
+<section class="video-section">
+  <div class="container-fluid">
+<div class="row">
+  <div class="col-lg-8">
+    <div class="featured-videos">
+      <h2>Featured Videos</h2>
+      <owl-carousel [items]="featuredvideos" [options]="carouselOptions" [carouselClasses]="['owl-theme', 'row', 'sliding']">
+        <div class="item" *ngFor="let video of featuredvideos">
+          <a [routerLink]="['/onevideo/singlevideo/', video._id]">
+              <div class="thumbnail-card card-shadow">
+                  <div class="thumb-img">
+                    <img [src]="video.image" alt="">
+                    <div class="hover-play">
+                      <i class="fa fa-play-circle" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                  <div class="thumb-caption">
+                    <div class="video-name">
+                      <h3>{{video?.title}}</h3>
+                    </div>
+                    <div class="channel">
+                      John Wick
+                    </div>
+                    <div class="video-metadata">
+                      <div class="row">
+                        <div class="col-6"><div class="views">{{video?.views}} views</div></div>
+                      <div class="col-6"><div class="date">{{video?.date_added | date:'MMMM d,M'}}</div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          </a>
+        
+          </div>
+          </owl-carousel>
+    </div>
+    <div class="vod">
+      <h2>
+        Trending Video
+      </h2>
+  <a [routerLink]="['/onevideo/singlevideo/',likesvideos._id]">
+      <div class="thumbnail-card card-shadow">
+      <div class="thumb-img">
+        <img [src]="likesvideos?.image" alt="">
+        <div class="hover-play">
+          <i class="fa fa-play-circle" aria-hidden="true"></i>
+        </div>
+      </div>
+      <div class="thumb-caption">
+        <div class="video-name">
+          <h3>{{likesvideos?.title}}</h3>
+        </div>
+        <div class="channel">
+          John Wick
+        </div>
+        <div class="video-metadata">
+          <div class="row">
+            <div class="col-6"><div class="views">{{likesvideos?.views}} views</div></div>
+          <div class="col-6"><div class="date">{{likesvideos?.date_added | date:'MMMM d,M'}}</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </a>
+    </div>
+  </div>
+  <div class="col-lg-4">
+    <div class="sidebar-videos">
+      <h2>
+        Latest
+      </h2>
+      <a >
+      <div class="thumbnail-card card-shadow" *ngFor="let video of latestvideos">
+        <div class="thumb-img">
+          <img [src]="video?.image" alt="">
+          <div class="hover-play">
+            <i class="fa fa-play-circle" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="thumb-caption">
+          <div class="video-name">
+            <h3>{{video?.title}}</h3>
+          </div>
+          <div class="channel">
+            John Wick
+          </div>
+          <div class="video-metadata">
+            <div class="row">
+              <div class="col-6"><div class="views">{{video?.views}} views</div></div>
+            <div class="col-6"><div class="date">{{video?.date_added | date:'MMMM d,M'}}</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </a>
+    </div>
+  </div>
+</div>
+
+   <div class="text-center see-more">
+      <a [routerLink]="['/onevideo/videos']">
+          See More
+      </a>
+    </div>
+  </div>
+</section>

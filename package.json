@@ -30,7 +30,7 @@
     "bootstrap": "^4.3.1",
     "compression": "^1.7.4",
     "core-js": "^2.5.4",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "feather-icons": "^4.24.1",
     "jquery": "^3.4.1",
     "jquery-stickem": "^1.0.3",
